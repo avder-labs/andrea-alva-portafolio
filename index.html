@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andrea Alva — Portafolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas><div class="vignette"></div><div id="floaters"></div>
+<div class="progress"></div><div class="cur"></div><div class="cur2"></div><div id="toast"></div>
+
+<nav><a href="#hero">inicio</a><a href="#about">perfil</a><a href="#skills">stack</a><a href="#exp">trayectoria</a><a href="#avder">avder</a><a href="#certs">certificados</a><a href="#contact">contacto</a></nav>
+<div class="dots-nav"><a href="#hero" data-l="inicio"></a><a href="#about" data-l="perfil"></a><a href="#skills" data-l="stack"></a><a href="#exp" data-l="trayectoria"></a><a href="#avder" data-l="avder"></a><a href="#certs" data-l="certificados"></a><a href="#contact" data-l="contacto"></a><a href="#thanks" data-l="gracias"></a></div>
+<button class="snd" id="snd" type="button" aria-pressed="false" aria-label="Activar música"><span class="eq"><i></i><i></i><i></i><i></i></span><span class="t">música · off</span></button>
+
+<section id="hero">
+  <div class="hl">
+    <span class="tag"><i class="pulse"></i> Buscando prácticas preprofesionales</span>
+    <h1>Hola, soy<br><span class="grad">Andrea Alva</span></h1>
+    <p class="role"><span class="mono">&gt;</span> <span id="typed"></span><i class="caret"></i></p>
+    <p class="lead">Estudiante de Ingeniería de Computación y Sistemas (USMP, 9.º ciclo). Responsable, proactiva y con facilidad para el trabajo en equipo; me apasiona la programación, las redes y el soporte TI.</p>
+    <div class="btns"><a class="btn p magnet" href="#certs">Ver certificados</a><button class="btn s magnet" id="meBtn" type="button">Conóceme ✦</button><a class="btn s magnet" href="#contact">Contáctame →</a></div>
+    <p class="tour mono">✦ Mueve el cursor: la galaxia reacciona · haz clic para lanzar una onda · desliza para explorar</p>
+  </div>
+  <div class="hr">
+    <div class="frame">
+      <div class="arch"><img src="TU-FOTO.jpg" alt="Andrea Alva" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=andrea'"><span class="scan"></span></div>
+      <span class="orb o1">&lt;/&gt; Desarrollo web</span><span class="orb o2">✿ Redes &amp; TI</span><span class="orb o3">AVDER</span>
+    </div>
+    <pre class="code"><code id="codeBox"></code></pre>
+  </div>
+  <div class="scroll"><i></i></div>
+</section>
+
+<section id="about">
+  <header class="sh"><span class="num">01</span><span class="mono">// perfil</span><h2>Sobre <span class="grad">mí</span></h2>
+    <p class="hint"><b>✦</b> Cambia de pestaña en el editor para conocerme: perfil, aptitudes y educación.</p></header>
+  <div class="aw">
+    <div class="ide card rv" data-fx="left">
+      <div class="ibar"><div class="wd"><i></i><i></i><i></i></div>
+        <div class="tabs"><button class="on" data-t="perfil">perfil.md</button><button data-t="aptitudes">aptitudes.json</button><button data-t="educacion">educacion.yml</button></div></div>
+      <div class="ibody" id="ideBody"></div>
+      <div class="istat"><span><i class="pulse"></i>main</span><span>UTF-8</span><span>Disponible para prácticas</span></div>
+    </div>
+    <div class="idw rv" data-fx="right"><div class="idc" data-tilt>
+      <div class="holo"></div>
+      <div class="phr"><img src="TU-FOTO.jpg" alt="Andrea" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=andrea'"></div>
+      <h3>Andrea N. Alva Chávez</h3><p>Ingeniería de Computación y Sistemas</p>
+      <div class="chips" style="justify-content:center"><i>USMP</i><i>9.º ciclo</i><i>Arequipa</i></div>
+      <div class="bars"></div>
+      <span class="st"><i class="pulse"></i>Disponible para prácticas</span>
+    </div></div>
+  </div>
+  <div class="kp">
+    <div class="kc rv" data-fx="up"><b class="grad" data-n="9">0</b><span>ciclo universitario</span></div>
+    <div class="kc rv" data-fx="up"><b class="grad" data-n="10">0</b><span>certificados</span></div>
+    <div class="kc rv" data-fx="up"><b class="grad" data-n="8">0</b><span>lenguajes y tecnologías</span></div>
+    <div class="kc rv" data-fx="up"><b class="grad" data-n="3">0</b><span>años de soporte técnico</span></div>
+  </div>
+  <div class="mq2"><div class="mr" id="mr1"></div><div class="mr rev" id="mr2"></div></div>
+</section>
+
+<section id="skills">
+  <header class="sh"><span class="num">02</span><span class="mono">// conocimientos</span><h2>Mi <span class="grad">tecnología</span></h2>
+    <p class="hint"><b>✦</b> Haz clic en cada círculo para ver cómo uso esa tecnología.</p></header>
+  <div class="legend"><span><i style="--c:var(--c1)"></i>Básico · 40%</span><span><i style="--c:var(--c2)"></i>Intermedio · 70%</span><span><i style="--c:var(--c3)"></i>Meta · 100%</span></div>
+  <div class="rings">
+    <div class="ring rv" data-fx="scale" data-p="70"><div class="rg"><em>0</em></div><h4>Java</h4><small>Intermedio</small><p class="d">Lo uso en proyectos de la universidad: lógica, clases y desarrollo de software.</p></div>
+    <div class="ring rv" data-fx="scale" data-p="70"><div class="rg"><em>0</em></div><h4>HTML / CSS</h4><small>Intermedio</small><p class="d">Maquetación de sitios web; mi base viene del curso de Gestión de Sitios Web.</p></div>
+    <div class="ring rv" data-fx="scale" data-p="70"><div class="rg"><em>0</em></div><h4>JavaScript</h4><small>Intermedio</small><p class="d">Interactividad web: eventos, DOM y animaciones como las de este portafolio.</p></div>
+    <div class="ring rv" data-fx="scale" data-p="70"><div class="rg"><em>0</em></div><h4>SQL</h4><small>Intermedio</small><p class="d">Consultas y diseño básico de bases de datos para guardar y consultar información.</p></div>
+    <div class="ring rv" data-fx="scale" data-p="40"><div class="rg"><em>0</em></div><h4>Node.js · Python</h4><small>Básico</small><p class="d">Mis primeros pasos con scripts y servidores; sigo practicando cada semana.</p></div>
+    <div class="ring rv" data-fx="scale" data-p="40"><div class="rg"><em>0</em></div><h4>C# · PHP</h4><small>Básico</small><p class="d">Bases de cada lenguaje; los exploro para ampliar mi stack.</p></div>
+  </div>
+  <div class="groups">
+    <div class="card rv" data-fx="up"><span class="mono">ofimática</span><div class="chips"><i>Word · Intermedio</i><i>Excel · Intermedio</i><i>PowerPoint · Intermedio</i></div></div>
+    <div class="card rv" data-fx="up"><span class="mono">herramientas</span><div class="chips"><i>Visual Studio Code</i><i>NetBeans</i><i>Sublime Text</i><i>Git · Básico</i></div></div>
+    <div class="card rv" data-fx="up"><span class="mono">redes / ti</span><div class="chips"><i>Fundamentos de redes</i><i>Seguridad informática</i><i>Soporte técnico</i></div></div>
+    <div class="card rv" data-fx="up"><span class="mono">idiomas</span><div class="chips"><i>Español · Nativo</i><i>Inglés · Intermedio</i></div></div>
+  </div>
+  <div class="marq"><div class="mt"><b><i>{ }</i>JAVA</b><b><i>=&gt;</i>JAVASCRIPT</b><b><i>;</i>SQL</b><b><i>&lt;/&gt;</i>HTML · CSS</b><b><i>&gt;&gt;&gt;</i>PYTHON</b><b><i>::</i>REDES</b><b><i>~/</i>GIT</b><b><i>{ }</i>JAVA</b><b><i>=&gt;</i>JAVASCRIPT</b><b><i>;</i>SQL</b><b><i>&lt;/&gt;</i>HTML · CSS</b><b><i>&gt;&gt;&gt;</i>PYTHON</b><b><i>::</i>REDES</b><b><i>~/</i>GIT</b><b><i>{ }</i>JAVA</b><b><i>=&gt;</i>JAVASCRIPT</b><b><i>;</i>SQL</b><b><i>&lt;/&gt;</i>HTML · CSS</b><b><i>&gt;&gt;&gt;</i>PYTHON</b><b><i>::</i>REDES</b><b><i>~/</i>GIT</b></div><div class="mt cd rev"><b><i>$</i>console.log("hola mundo");</b><b><i>$</i>SELECT * FROM talento;</b><b><i>$</i>git commit -m "listo"</b><b><i>$</i>npm run build</b><b><i>$</i>ping 192.168.1.1</b><b><i>$</i>if (idea) crear();</b><b><i>$</i>sudo apt install futuro</b><b><i>$</i>console.log("hola mundo");</b><b><i>$</i>SELECT * FROM talento;</b><b><i>$</i>git commit -m "listo"</b><b><i>$</i>npm run build</b><b><i>$</i>ping 192.168.1.1</b><b><i>$</i>if (idea) crear();</b><b><i>$</i>sudo apt install futuro</b><b><i>$</i>console.log("hola mundo");</b><b><i>$</i>SELECT * FROM talento;</b><b><i>$</i>git commit -m "listo"</b><b><i>$</i>npm run build</b><b><i>$</i>ping 192.168.1.1</b><b><i>$</i>if (idea) crear();</b><b><i>$</i>sudo apt install futuro</b></div></div>
+</section>
+
+<section id="exp">
+  <header class="sh"><span class="num">03</span><span class="mono">// trayectoria · desliza ↓</span><h2>Mi <span class="grad">camino</span></h2>
+    <p class="hint"><b>✦</b> Desliza, usa las flechas o toca un año: cada paso muestra las tarjetas completas.</p></header>
+  <div class="hwrap">
+    <div class="htrack">
+      <article class="card hc"><b>2019</b><em>Primeros pasos</em><h3>Curso integral de Gestión de Sitios Web</h3><p>Mi primer acercamiento al desarrollo y administración de sitios web.</p></article>
+      <article class="card hc"><b>2021</b><em>Bases TI</em><h3>Ciberseguridad y Excel intermedio</h3><p>Certificaciones en Seguridad Cibernética (Cisco) y Microsoft Excel Intermedio.</p></article>
+      <article class="card hc"><b>2022</b><em>Proyectos universitarios</em><h3>Ingeniería de Sistemas · USMP</h3><p>Desarrollo de software, documentación funcional, pruebas e informes técnicos con coordinación de entregables.</p></article>
+      <article class="card hc"><b>2023</b><em>Soporte técnico</em><h3>Apoyo técnico independiente</h3><p>Instalación y configuración de programas, soporte en Office e impresoras, y optimización de equipos.</p></article>
+      <article class="card hc"><b>2025</b><em>Ponente &amp; redes</em><h3>EduTicInnova y CCNA</h3><p>Ponente en el XIV Congreso Internacional EduTicInnova y certificación Cisco CCNA: Introducción a las redes.</p></article>
+      <article class="card hc"><b>♏</b><em>Presente</em><h3>9.º ciclo · buscando prácticas</h3><p>Lista para aportar en un equipo de TI y seguir creciendo profesionalmente.</p></article>
+    </div>
+  </div>
+  <div class="expctl">
+    <button class="rnd" id="tlPrev" aria-label="Anterior">←</button>
+    <div class="tld" id="tlDots"></div>
+    <button class="rnd" id="tlNext" aria-label="Siguiente">→</button>
+    <span class="mono" id="tlCount">1–3 de 6</span>
+  </div>
+  <div class="hbar"><i></i></div>
+</section>
+
+<section id="avder">
+  <header class="sh"><span class="num">04</span><span class="mono">// historia</span><h2>Mi historia en <span class="grad">AVDER</span></h2>
+    <p class="hint"><b>✦</b> Pasa el cursor sobre el logo para dispersar las partículas · abre la historia completa en 5 capítulos.</p></header>
+  <div class="story rv" data-fx="up">
+    <div class="book">
+      <p class="chap">Capítulo I · de V</p>
+      <p class="q">“Antes de ser un estudio, fue un sueño pequeño que cabía en mi pecho…”</p>
+      <p>AVDER lleva mi nombre porque nació de mí: de las ganas de crear algo propio que algún día ayude a otros a hacer realidad sus ideas.</p>
+      <p>Es un estudio independiente que apenas empieza, pero ya con proyectos reales de páginas web, asistentes y diseño, y la mirada puesta en crecer y llegar a empresas.</p>
+      <div class="steps"><i class="on">I</i><i>II</i><i>III</i><i>IV</i><i>V</i></div>
+      <div class="btns"><button class="btn p magnet" id="openStory">Leer la historia completa →</button><a class="btn s magnet" href="https://TU-ENLACE-DE-AVDER" target="_blank" rel="noopener">Visitar AVDER Studio ↗</a></div>
+    </div>
+    <div class="card logocard"><div class="logobox"><canvas id="logo"></canvas></div><div class="chips"><i>Páginas web</i><i>Software a medida</i><i>Aplicaciones</i><i>Visión de crecimiento</i></div></div>
+  </div>
+</section>
+
+<section id="certs">
+  <header class="sh"><span class="num">05</span><span class="mono">// certificados</span><h2>Mis <span class="grad">certificaciones</span></h2>
+    <p class="hint"><b>✦</b> Filtra por tema · baja por el mapa de estrellas: la imagen te acompaña y cambia sola · o elige uno con un clic.</p></header>
+  <div class="fl" id="fl"><button class="on" data-f="all">Todos</button><button data-f="congreso">Congresos</button><button data-f="redes">Redes y seguridad</button><button data-f="tec">Excel y web</button></div>
+  <div class="cdeck rv" data-fx="up">
+    <div class="cfeat">
+      <div class="cframe"><i class="cn tl"></i><i class="cn tr"></i><i class="cn bl"></i><i class="cn br"></i>
+        <img id="cfImg" alt="Certificado" style="opacity:0"><img id="cfImgB" alt="Certificado" style="opacity:0"><span class="cscan"></span><span class="cbadge" id="cfYear"></span></div>
+      <div class="cinfo"><span class="mono" id="cfIss"></span><h3 id="cfTit"></h3><p id="cfDesc"></p>
+        <div class="cact"><button class="rnd" id="cfPrev" type="button" aria-label="Anterior">←</button><button class="rnd" id="cfNext" type="button" aria-label="Siguiente">→</button><button class="btn p magnet" id="cfOpen" type="button">Ampliar ✦</button><span class="mono" id="cfCnt"></span></div></div>
+    </div>
+    <div class="clist" id="cList"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="forest" id="forest"></div><div class="rays"></div><div class="mist"></div><div id="ferns"></div><canvas id="fairy"></canvas><div id="fgf"></div>
+  <header class="sh"><span class="num">06</span><span class="mono">// contacto</span><h2>Hablemos de tu <span class="grad">proyecto</span></h2>
+    <p class="hint"><b>&gt;_</b> Cuéntame tu idea y te respondo lo antes posible.</p></header>
+  <div class="two rv" data-fx="up">
+    <div class="info glade">
+      <h3 class="gt">¿Prefieres escribir directo?</h3>
+      <a class="chan wa" href="https://wa.me/51922977009" target="_blank" rel="noopener"><b>☎</b><span>WhatsApp<small>+51 922 977 009</small></span><em>abrir ↗</em></a>
+      <a class="chan" href="mailto:andreanycholle15@gmail.com"><b>✉</b><span>Correo<small>andreanycholle15@gmail.com</small></span><em>escribir ↗</em></a>
+      <a class="chan" href="#"><b>in</b><span>LinkedIn<small>conectemos</small></span><em>ver ↗</em></a>
+    </div>
+    <form class="card letter form term" id="form" autocomplete="off" novalidate>
+      <div class="tbar"><span class="dots"><i></i><i></i><i></i></span><span class="tt">~/andrea/contacto.sh</span><span class="live"><u></u>online</span></div>
+      <div class="tb">
+        <p class="cmd"><b>$</b> ./enviar_mensaje <em>--destino=andrea</em></p>
+        <label class="fld"><input id="fn" placeholder=" " autocomplete="name"><span>// nombre</span><i></i></label>
+        <input type="hidden" id="fe">
+        <div class="topics" id="spells"><small>--motivo</small>
+          <button type="button" class="on" data-v="Propuesta de trabajo">Trabajo</button><button type="button" data-v="Colaboración">Colaboración</button><button type="button" data-v="Consulta">Consulta</button>
+          <input type="hidden" id="fs" value="Propuesta de trabajo"></div>
+        <label class="fld"><textarea id="fm" rows="4" placeholder=" "></textarea><span>// mensaje</span><i></i></label>
+        <p class="help" id="help"></p>
+        <div class="send"><button class="btn go sleep" type="submit">▸ Enviar por WhatsApp</button><button class="btn s" type="button" id="mail">@ Correo</button></div>
+      </div>
+      <div class="ok"><span class="okS">✓</span><h4>Mensaje enviado</h4><p>Se abrió tu aplicación con el mensaje listo. Gracias por escribirme.</p><button type="button" class="btn s" id="again">Escribir otro</button></div>
+    </form>
+  </div>
+</section>
+
+<section id="thanks">
+  <div class="aurora"></div><canvas id="magic"></canvas><div class="halo"></div>
+  <p class="mono">// fin del archivo ✦</p>
+  <h2 class="gracias" id="gracias">Gracias</h2>
+  <svg class="ul" viewBox="0 0 400 16" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="ulg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="0"><stop offset="0" stop-color="#ffc2de" stop-opacity="0"/><stop offset=".25" stop-color="#ffc2de"/><stop offset=".5" stop-color="#ffe2b8"/><stop offset=".75" stop-color="#c5adff"/><stop offset="1" stop-color="#c5adff" stop-opacity="0"/></linearGradient></defs><path pathLength="1" d="M0 8 L400 8"/></svg>
+  <p class="sub">por recorrer mi universo</p>
+  <p class="lead">Fue un gusto compartir mi camino contigo. Estaré feliz de aportar, aprender y crear algo hermoso juntos.</p>
+  <div class="btns"><button class="btn p magnet" id="wish">✦ Pide un deseo</button><a class="btn s magnet" href="#contact">Escríbeme</a><a class="btn s magnet" href="#hero">↑ Volver arriba</a></div>
+  <p id="wishText"></p>
+  <p class="cm">Mueve el cursor sobre las letras de estrellas · © 2026 Andrea Alva — hecho con ♡, Three.js y GSAP</p>
+</section>
+
+<div class="modal" id="storyM"><div class="sbox">
+  <canvas id="sNet"></canvas><i class="beam"></i>
+  <i class="cn tl"></i><i class="cn tr"></i><i class="cn bl"></i><i class="cn br"></i>
+  <div class="sbar"><div class="wd"><i></i><i></i><i></i></div><span class="mono">avder.sys — modo historia</span><span class="mono sst"><i class="pulse"></i>en línea</span><button class="x" data-close>×</button></div>
+  <div class="sbody">
+    <aside class="srail" id="sRail"></aside>
+    <main class="spane">
+      <div class="snum" id="sNum">I</div>
+      <p class="mono slog" id="sLog"></p>
+      <h3 id="sTitle"></h3>
+      <p class="stxt" id="sTxt"></p>
+      <div class="sunlock" id="sUnlock"></div>
+    </main>
+  </div>
+  <div class="sfoot"><button class="rnd" id="sPrev" aria-label="Anterior">←</button><div class="sprog"><i id="sBar"></i></div><button class="rnd" id="sNext" aria-label="Siguiente">→</button><button class="btn s" id="sAuto">❚❚ Pausar</button><span class="mono" id="sCnt">01 / 05</span></div>
+</div></div>
+<div class="modal" id="meM"><div class="mewrap">
+  <canvas id="meCv"></canvas><div class="megrid"></div><div class="mescan"></div>
+  <button class="x" data-close aria-label="Cerrar">×</button>
+  <aside class="mehud">
+    <div class="mealt"><i id="meFill"></i><b id="meDot"></b></div>
+    <div class="mehv"><small>ascenso</small><strong><span id="meP">000</span>%</strong>
+      <small>obstáculos</small><strong><span id="meO">0</span>/3</strong>
+      <small>pulso</small><strong><span class="mebeat"></span><span id="meB">72</span> bpm</strong></div>
+    <p class="mest mono" id="meSt">&gt; preparando mochila…</p>
+  </aside>
+  <div class="mescroll" id="meScroll" data-lenis-prevent>
+    <section class="mes s0"><div class="mep c mrv">
+      <span class="mono mrv" style="--d:.1s">// conóceme.exe</span>
+      <h2 class="mrv" style="--d:.2s">Hola, soy <span class="grad">Andrea</span></h2>
+      <p class="mequote mrv" style="--d:.35s">“Creo que todo es posible.”</p>
+      <p class="mesub mrv" style="--d:.5s">Pinto, canto de vez en cuando, amo las flores y los animales, y subo volcanes para recordarme que todo camino tiene cima. Acompáñame en el ascenso.</p>
+      <div class="mecue mrv" style="--d:.7s"><i></i><span class="mono">desliza para empezar a subir</span></div>
+    </div></section>
+
+    <section class="mes s1"><div class="mep l mrv">
+      <span class="mono">// campamento base · 01</span>
+      <h3>Todo ascenso empieza con curiosidad</h3>
+      <p>Tengo 23 años y unas ganas enormes de aprender: cómo funcionan las cosas, cómo cambian los colores al mezclarse, cómo se construye una idea desde cero. Soy creativa, curiosa y bastante terca con lo que me importa.</p>
+      <pre class="mecode"><code><span class="k">const</span> <span class="v">mochila</span> = {
+  <span class="p">pinceles</span>: <span class="s">"siempre a mano"</span>,
+  <span class="p">voz</span>: <span class="s">"para cantar cuando se puede"</span>,
+  <span class="p">curiosidad</span>: <span class="n">Infinity</span>,
+  <span class="p">plantitas</span>: <span class="s">"con cariño"</span>,
+  <span class="p">rendirse</span>: <span class="n">false</span>
+};</code></pre>
+    </div></section>
+
+    <section class="mes s2"><div class="mep r mrv">
+      <span class="mono">// obstáculos · 02</span>
+      <h3>El camino nunca es recto</h3>
+      <p>En la montaña aprendí que subir no es solo avanzar: hay pendientes que queman las piernas, clima que cambia, dudas, cansancio y frustración. Hubo momentos en que pensé en parar. Pero cada obstáculo me enseñó a buscar otra ruta, no a dar la vuelta.</p>
+      <div class="mecon mono">
+        <p style="--i:0">&gt; subiendo.exe --sin-rendirme</p>
+        <p style="--i:1" class="w">[warn] cansancio: 82%</p>
+        <p style="--i:2" class="er">[error] frustración: camino bloqueado</p>
+        <p style="--i:3">&gt; intentarOtraVez({ idea: "distinta" })</p>
+        <p style="--i:4" class="ok">[ ok ] obstáculo superado ✓</p>
+      </div>
+    </div></section>
+
+    <section class="mes s3"><div class="mep wide mrv">
+      <span class="mono">// cresta · 03</span>
+      <h3>Lo que la montaña me enseñó</h3>
+      <div class="melessons">
+        <article class="melc"><b>01</b><h4>Los obstáculos son parte del camino</h4><p>No significan que vas mal; significan que estás subiendo.</p></article>
+        <article class="melc"><b>02</b><h4>La frustración también pasa</h4><p>Se siente enorme en el momento y se hace pequeña cuando miras atrás.</p></article>
+        <article class="melc"><b>03</b><h4>Se llega paso a paso</h4><p>No hace falta ir rápido; hace falta no soltar el siguiente paso.</p></article>
+      </div>
+      <p class="mefoot">Y eso lo llevo a todo: al código, a un cuadro, a mis plantitas, a cada proyecto nuevo.</p>
+    </div></section>
+
+    <section class="mes s4"><div class="mep l mrv">
+      <span class="mono">// cima · 04</span>
+      <h3 class="mebig">Y entonces… <span class="grad">llegas.</span></h3>
+      <p>Cuando superas todo eso, la cima te devuelve cada gota de esfuerzo: una vista increíble, el aire frío, el silencio y la certeza de que sí podías. Esa satisfacción no se compra ni se atajó: se gana. Por eso quiero subir muchos volcanes más.</p>
+      <div class="mestats">
+        <div><b data-n="23">0</b><span>años de curiosidad</span></div>
+        <div><b data-n="1">0</b><span>volcán conquistado · Chucura</span></div>
+        <div><b>∞</b><span>cosas por aprender</span></div>
+        <div><b>?</b><span>próximo volcán…</span></div>
+      </div>
+    </div></section>
+
+    <section class="mes s5"><div class="mep wide mrv">
+      <span class="mono">// mi universo · 05</span>
+      <h3>Desde la cima también se ve lo que amo</h3>
+      <div class="meloves">
+        <article><i>✦</i><h4>Pintura</h4><p>Los colores son mi forma de hablar sin palabras.</p></article>
+        <article><i>♪</i><h4>Canto</h4><p>De vez en cuando, cuando el corazón está contento.</p></article>
+        <article><i>✿</i><h4>Flores &amp; plantitas</h4><p>Mi emprendimiento de detalles y plantitas, hecho con cariño.</p></article>
+        <article><i>♡</i><h4>Animales</h4><p>Me encantan todos; son parte de lo mejor de este mundo.</p></article>
+        <article><i>∞</i><h4>Aprender</h4><p>Un universo entero por descubrir, y apenas estoy empezando.</p></article>
+        <article><i>◐</i><h4>Tocino de cielo</h4><p>Mi postre favorito y mi recompensa después de cada cima.</p></article>
+      </div>
+      <div class="mepal"><small class="mono">mis colores · toca uno</small>
+        <button style="--c:#ffc9de" data-c="#ffc9de" aria-label="rosado pastel"></button><button style="--c:#f5c542" data-c="#f5c542" aria-label="dorado"></button><button style="--c:#ffe66d" data-c="#ffe66d" aria-label="amarillo"></button><button style="--c:#a8dcff" data-c="#a8dcff" aria-label="celeste"></button></div>
+      <div class="btns"><a class="btn p magnet" href="#contact">Contáctame →</a><a class="btn s magnet" href="#avder">Conocer AVDER</a></div>
+    </div></section>
+  </div>
+</div></div>
+<div class="modal" id="certM"><div class="mbox cbox"><button class="x" data-close>×</button>
+  <div class="cview"><i class="cn tl"></i><i class="cn tr"></i><i class="cn bl"></i><i class="cn br"></i><img id="cimg" alt=""></div>
+  <div class="ccap"><div><span class="mono" id="cm1"></span><h3 id="ct"></h3><p id="cd"></p></div>
+    <div class="cnav"><button class="rnd" id="cPrev" aria-label="Anterior">←</button><span class="mono" id="cc"></span><button class="rnd" id="cNext" aria-label="Siguiente">→</button></div></div>
+</div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
